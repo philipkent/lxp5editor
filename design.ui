@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Lexicon LXP-5 Editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="slider_delay1Coarse">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="pageStep">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_delay1Fine">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_feedback1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_delay2Coarse">
+    <property name="geometry">
+     <rect>
+      <x>127</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>126</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_delay2Fine">
+    <property name="geometry">
+     <rect>
+      <x>157</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_feedback2">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>126</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_delay3Coarse">
+    <property name="geometry">
+     <rect>
+      <x>217</x>
+      <y>19</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>126</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay1Coarse">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay1Fine">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_feedback1">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay2Coarse">
+    <property name="geometry">
+     <rect>
+      <x>127</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay2Fine">
+    <property name="geometry">
+     <rect>
+      <x>157</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_feedback2">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay3Coarse">
+    <property name="geometry">
+     <rect>
+      <x>217</x>
+      <y>179</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinbox_midiChannel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>48</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>16</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>56</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delay 1</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>200</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fb</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>250</y>
+      <width>56</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delay 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fb</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>227</x>
+      <y>200</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>217</x>
+      <y>229</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>221</x>
+      <y>250</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delay 3</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_delay3Fine">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>20</y>
+      <width>21</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_pitchBase">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>20</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_delay3Fine">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>198</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Base</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>250</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pitch</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>424</x>
+      <y>198</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interval</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>476</x>
+      <y>197</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adjust</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>230</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MIDI Channel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>470</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>High Cut</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>470</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Low Cut</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_decayTime">
+    <property name="geometry">
+     <rect>
+      <x>549</x>
+      <y>20</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>14</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_trebleDecay">
+    <property name="geometry">
+     <rect>
+      <x>603</x>
+      <y>20</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_bassMultiply">
+    <property name="geometry">
+     <rect>
+      <x>653</x>
+      <y>20</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>31</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_size">
+    <property name="geometry">
+     <rect>
+      <x>703</x>
+      <y>20</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pitchBase">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pitchInterval">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pitchAdjust">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_decayTime">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_trebleDecay">
+    <property name="geometry">
+     <rect>
+      <x>613</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_bassMultiply">
+    <property name="geometry">
+     <rect>
+      <x>664</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_size">
+    <property name="geometry">
+     <rect>
+      <x>716</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_diffusion">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>180</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_highCutFilter">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_lowCutFilter">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>290</y>
+      <width>50</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>31</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>9</y>
+      <width>251</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <zorder>slider_feedback1</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>151</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QSlider" name="slider_pitchInterval">
+     <property name="geometry">
+      <rect>
+       <x>49</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>36</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_pitchAdjust">
+     <property name="geometry">
+      <rect>
+       <x>99</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <zorder>slider_pitchInterval</zorder>
+    <zorder>slider_pitchAdjust</zorder>
+    <zorder>slider_pitchAdjust</zorder>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>536</x>
+      <y>10</y>
+      <width>341</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Decay Time</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>176</x>
+       <y>189</y>
+       <width>31</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Size</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>175</y>
+       <width>41</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Treble Decay</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>123</x>
+       <y>188</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bass Multiply</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_reverbBalance">
+     <property name="geometry">
+      <rect>
+       <x>267</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_reverbBalance">
+     <property name="geometry">
+      <rect>
+       <x>283</x>
+       <y>170</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_reverbBalance_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>56</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Balance</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>311</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>240</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reverb</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_diffusion">
+     <property name="geometry">
+      <rect>
+       <x>217</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>190</y>
+       <width>56</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Diffusion</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_highCutFilter">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>450</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lowCutFilter">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>450</y>
+      <width>21</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>301</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>240</y>
+       <width>151</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Equalization and Balance</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>281</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_LFORate">
+     <property name="geometry">
+      <rect>
+       <x>153</x>
+       <y>170</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_outputBalance">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_outputBalance">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>170</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>190</y>
+       <width>56</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output Balance</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_LFORate">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>153</x>
+       <y>190</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LFO Rate</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_outputLevel">
+     <property name="geometry">
+      <rect>
+       <x>184</x>
+       <y>11</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_inputLevel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>50</width>
+       <height>160</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_outputLevel">
+     <property name="geometry">
+      <rect>
+       <x>198</x>
+       <y>172</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_inputLevel">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>170</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>190</y>
+       <width>56</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output Level</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>249</x>
+       <y>190</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Input Level</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label_50</zorder>
+    <zorder>line_6</zorder>
+    <zorder>slider_outputBalance</zorder>
+    <zorder>label_LFORate</zorder>
+    <zorder>slider_outputBalance</zorder>
+    <zorder>label_outputBalance</zorder>
+    <zorder>label_30</zorder>
+    <zorder>slider_LFORate</zorder>
+    <zorder>label_33</zorder>
+    <zorder>slider_outputLevel</zorder>
+    <zorder>slider_inputLevel</zorder>
+    <zorder>label_outputLevel</zorder>
+    <zorder>label_inputLevel</zorder>
+    <zorder>label_31</zorder>
+    <zorder>label_32</zorder>
+    <zorder>slider_highCutFilter</zorder>
+   </widget>
+   <widget class="QComboBox" name="comboBox_midiPort">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>550</y>
+      <width>81</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QComboBox::AdjustToContents</enum>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="logConsole">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>280</y>
+      <width>531</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_loop">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>51</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Loop</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>frame_3</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>frame_5</zorder>
+   <zorder>frame</zorder>
+   <zorder>slider_delay1Coarse</zorder>
+   <zorder>slider_delay1Fine</zorder>
+   <zorder>slider_feedback1</zorder>
+   <zorder>slider_delay2Coarse</zorder>
+   <zorder>slider_delay2Fine</zorder>
+   <zorder>slider_feedback2</zorder>
+   <zorder>slider_delay3Coarse</zorder>
+   <zorder>label_delay1Coarse</zorder>
+   <zorder>label_delay1Fine</zorder>
+   <zorder>label_feedback1</zorder>
+   <zorder>label_delay2Coarse</zorder>
+   <zorder>label_delay2Fine</zorder>
+   <zorder>label_feedback2</zorder>
+   <zorder>label_delay3Coarse</zorder>
+   <zorder>spinbox_midiChannel</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>line</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>line_2</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>line_3</zorder>
+   <zorder>label_15</zorder>
+   <zorder>slider_delay3Fine</zorder>
+   <zorder>slider_pitchBase</zorder>
+   <zorder>label_delay3Fine</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_20</zorder>
+   <zorder>line_4</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_27</zorder>
+   <zorder>label_28</zorder>
+   <zorder>slider_decayTime</zorder>
+   <zorder>slider_trebleDecay</zorder>
+   <zorder>slider_bassMultiply</zorder>
+   <zorder>slider_size</zorder>
+   <zorder>label_pitchBase</zorder>
+   <zorder>label_pitchInterval</zorder>
+   <zorder>label_pitchAdjust</zorder>
+   <zorder>label_decayTime</zorder>
+   <zorder>label_trebleDecay</zorder>
+   <zorder>label_bassMultiply</zorder>
+   <zorder>label_size</zorder>
+   <zorder>label_diffusion</zorder>
+   <zorder>slider_highCutFilter</zorder>
+   <zorder>slider_lowCutFilter</zorder>
+   <zorder>label_highCutFilter</zorder>
+   <zorder>label_lowCutFilter</zorder>
+   <zorder>comboBox_midiPort</zorder>
+   <zorder>logConsole</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>btn_loop</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

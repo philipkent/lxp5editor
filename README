@@ -1,0 +1,8 @@
+===Lexicon LXP-5 Editor===
+An cross-platform editor for the Lexicon LXP-5.
+
+[build gui]
+pyuic4 design.ui -o design.py
+
+[run gui]
+python main.py
