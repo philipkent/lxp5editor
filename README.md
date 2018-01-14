@@ -5,8 +5,7 @@ A cross-platform editor for the Lexicon LXP-5 effects processor written in Pytho
 ## Getting Started
 
 To start the editor, run `python main.py`.  Then select your midi interface and the midi channel of your LXP-5 in the
-lower left of the editor.  Next, bask in the warmth of no longer having to program the LXP-5 with two knobs.
-
+lower left of the editor.  
 
 ### Prerequisites
 
