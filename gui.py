@@ -1,10 +1,11 @@
-from PyQt4 import QtGui
+from PyQt5 import QtGui
+from PyQt5 import QtWidgets
 import sys
 import design
 import midi_implementation
 
 
-class LXP5GUI(QtGui.QMainWindow, design.Ui_MainWindow):
+class LXP5GUI(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)

@@ -157,7 +157,7 @@ class LXP5App(gui.LXP5GUI):
         self.logger.debug(logmsg)
 
 def main():
-    app = gui.QtGui.QApplication(sys.argv)
+    app = gui.QtWidgets.QApplication(sys.argv)
     app.setWindowIcon(gui.QtGui.QIcon('assets/lxp5.png'))
     form = LXP5App()
     form.show()
